@@ -5,7 +5,7 @@ def main() -> int:
     """
     Entry point.
     """
-    print("Nazdar svet!")
+    print("Let's agree on this new message")
 
 
 if __name__ == "__main__":
