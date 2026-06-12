@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools", "wheel", "build"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hello"
+requires-python = "==3.13.5"
+dynamic = ["version"]
+dependencies = [
+]
+
+[project.optional-dependencies]
+dev = [
+  "black",
+  "isort",
+  "mypy",
+  "mypy-extensions",
+  "pylint",
+  "pytest",
+  "pytest-timeout",
+  "validate-pyproject",
+]
+
+[tool.setuptools.dynamic]
+version = {file = "VERSION"}
+
+[project.scripts]
+hello = "hello.main:main"
+
+[tool.setuptools.package-data]
+xathros_ingest_service = ["py.typed"]
+
+
+# vim: ts=2 sw=2 et:
+
+
