@@ -5,7 +5,7 @@ def main() -> int:
     """
     Entry point.
     """
-    print("Hello world!")
+    print("Eh hozer, you aboot for some Tim's?")
 
 
 if __name__ == "__main__":
